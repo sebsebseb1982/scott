@@ -36,7 +36,7 @@ var translation = '';
 _.forEach(
 	string2translate.split(''),
 	function(char) {
-		translation = translation.concat(rosettaStone[char]);
+		translation = translation.concat([rosettaStone[char], ' ']);
 	}
 );
 
